@@ -19,6 +19,8 @@ S'han reutilitzat estructures de dades fetes en activitats anteriors:
 
 La taula de hash s'utilitza per guardar els usuaris i els artistes, ja que permet consultar ràpidament si un usuari o artista existeix. La llista dinàmica s'utilitza per guardar les escoltes de cada usuari i també per retornar la llista final de recomanacions.
 
+No s'ha utilitzat un graf bipartit, encara que seria una alternativa possible per representar la relació entre usuaris i artistes. En aquest cas s'ha optat per guardar els usuaris en una taula de hash i mantenir dins de cada usuari la seva llista d'escoltes. Aquesta estructura permet accedir ràpidament al perfil de l'usuari i recórrer les seves escoltes sense necessitat de consultar la relació inversa artista-usuaris.
+
 També s'han creat algunes classes pròpies per representar les dades del problema:
 
 - `UsuariLastFm`: guarda la informació del perfil d'un usuari i la seva llista d'escoltes.
