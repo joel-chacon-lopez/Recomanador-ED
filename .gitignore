@@ -1,0 +1,6 @@
+out/
+build/
+.gradle/
+*.class
+.DS_Store
+Dades/.DS_Store
